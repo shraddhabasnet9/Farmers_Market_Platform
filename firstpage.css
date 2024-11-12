@@ -1,0 +1,42 @@
+*{
+    background-color: white;
+    padding: 0;
+}
+h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    margin: 16px 15px 76px;
+}
+#logo img{
+    height:300px;
+    width:100%;
+    margin: 16px -11px;
+    justify-content: center;
+    display: flex;
+}
+body{
+    justify-content: center;
+    display: grid;
+}
+#btn button{
+    margin: 43px 24px;
+
+    display:inline;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+   
+}
+#btn button a{
+    border: solid black;
+    margin-top: 20px;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+  color:red;
+}
+#btn button a:hover{
+    color: black;
+    background-color: white;
+}

@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="feedback.css"/>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form action="feedback.php" method="post">
+            <h1>Feedback</h1>
+            <div class="input">
+                <label>Username:</label>
+                <input type="text" placeholder="username" name="name">
+            </div>
+            <div class="input">
+                <label>Email:</label>
+                <input type="email" placeholder="email" name="email">
+            </div>
+            <div id="input">  
+                <label>Your Comments:</label>
+                <textarea  name="comments" cols="15" rows="5" placeholder="Enter your opinions here.."></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+</body>
+</html>

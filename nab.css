@@ -1,0 +1,126 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width:100%;
+   background-color:white;
+}
+:root{
+    --navbar: height 59px;
+}
+.navbar{
+    background-color: rgb(72, 92, 105);
+    display: flex;
+    align-items: center;
+}
+#logo {
+    margin:5px 34px;
+}
+#logo img{
+    height: 69px;
+    margin:15px 10px;
+} */
+ /* General reset and box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #4CAF50; /* Change to your desired color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white;
+    font-weight: 500;
+    margin-right: 20px;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #FFD700; /* Highlight color on hover */
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: #FFD700; /* Active link color */
+}
+
+.navbar .form-control {
+    border-radius: 20px;
+    border: 2px solid #4CAF50;
+    padding: 5px 15px;
+    transition: all 0.3s ease;
+}
+
+.navbar .form-control:focus {
+    border-color: #FFD700;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+.navbar .btn-outline-success {
+    color: #4CAF50;
+    border-color: #4CAF50;
+    border-radius: 20px;
+    padding: 5px 15px;
+    transition: all 0.3s ease;
+}
+
+.navbar .btn-outline-success:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Logo */
+#logo img {
+    height: 40px;
+    width: auto;
+}
+
+/* Navbar links on the right side */
+.navbar-collapse .navbar-nav:last-child {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/* Responsive behavior */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+    
+    .navbar-nav {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navbar .btn-outline-success {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #logo img {
+        height: 35px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        margin-right: 0;
+        padding: 10px;
+    }
+
+    .navbar .form-control {
+        margin-bottom: 10px;
+    }
+}
